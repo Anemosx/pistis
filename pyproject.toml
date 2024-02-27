@@ -17,6 +17,7 @@ classifiers = [
 [tool.poetry]
 name = "pistis"
 version = "0.0.1"
+license = "MIT"
 description = ""
 authors = [
     "Anemos"
