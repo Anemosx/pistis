@@ -1,0 +1,47 @@
+[project]
+name = "pistis"
+version = "0.0.1"
+authors = [
+  { name="Anemos"}
+]
+description = "Pistis"
+readme = "README.md"
+requires-python = ">=3.10, <3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+"Git Repository" = "https://github.com/Anemosx/pistis"
+
+[tool.poetry]
+name = "pistis"
+version = "0.0.1"
+description = ""
+authors = [
+    "Anemos"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.12"
+psutil = "^5.9.8"
+py-cpuinfo = "^9.0.0"
+numpy = "^1.26.4"
+gputil = "^1.4.0"
+torch = {version = "^2.2.1", source = "pytorch"}
+pycuda = "^2024.1"
+
+[tool.poetry.extras]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
